@@ -7,6 +7,7 @@ function App() {
     const fetchHello = async () => {
         try {
             const response = await axios.get('http://mingyu.sku-sku.com/api/hello');
+            // 업뎃 확인
             setMessage(response.data);
         } catch (error) {
             console.error('Error fetching the hello message', error);
